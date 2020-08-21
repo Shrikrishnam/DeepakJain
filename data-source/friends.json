@@ -1,0 +1,211 @@
+{
+  "allfriends": [
+    {
+      "fname": "deepaks",
+      "lname": "jain",
+      "age": "25",
+      "phone": "2121212121",
+      "email": "jain@gmail.com",
+      "trainer": "jain@1999",
+      "physio": false,
+      "street": "jhj",
+      "city": "hjhj",
+      "state": "hjhj",
+      "pincode": "123456",
+      "country": "india",
+      "date": "2020-08-21",
+      "packages": "5000",
+      "id": 1
+    },
+    {
+      "fname": "deepaktest",
+      "lname": "deepaktest",
+      "age": "21",
+      "phone": "2121212121",
+      "email": "jain@gmail.com",
+      "trainer": "deepak2test",
+      "physio": true,
+      "street": "jn",
+      "city": "njnjnj",
+      "state": "nnjnj",
+      "pincode": "123456",
+      "country": "india",
+      "date": "2020-08-29",
+      "packages": "1000",
+      "id": 2
+    },
+    {
+      "fname": "Deepak",
+      "lname": "Jain",
+      "age": "34",
+      "phone": "9012131765",
+      "email": "jain@gmail.com",
+      "trainer": "jain",
+      "physio": true,
+      "street": "Main market",
+      "city": "Meerut",
+      "state": "UP",
+      "pincode": "250342",
+      "country": "INDIA",
+      "date": "2020-08-28",
+      "packages": "1000",
+      "id": 3
+    },
+    {
+      "fname": "Deepak",
+      "lname": "Jain",
+      "age": "44",
+      "phone": "8447633488",
+      "email": "jain04197@gmail.com",
+      "trainer": "Jain",
+      "physio": true,
+      "street": "UP",
+      "city": "Meerut",
+      "state": "UP",
+      "pincode": "250342",
+      "country": "INDIA",
+      "date": "2020-08-29",
+      "packages": "1000",
+      "id": 4
+    },
+    {
+      "fname": "Deepak",
+      "lname": "Jain",
+      "age": "27",
+      "phone": "2132123434",
+      "email": "deepakjain@gmail.com",
+      "trainer": "JainDeepak",
+      "physio": true,
+      "street": "Main",
+      "city": "MEERUT",
+      "state": "UP",
+      "pincode": "250342",
+      "country": "INDIA",
+      "date": "2020-08-28",
+      "packages": "2000",
+      "id": 5
+    }
+  ],
+  "contactus": [
+    {
+      "firstname": "deepak",
+      "lastname": "jain",
+      "phonenumber": 8447633488,
+      "email": "jain@gmail.com",
+      "message": "abcdef",
+      "id": 1
+    },
+    {
+      "firstname": "hj",
+      "lastname": "hj",
+      "phonenumber": 1234567891,
+      "email": "aiin@gmail.com",
+      "message": "qjm",
+      "id": 2
+    },
+    {
+      "firstname": "deepak",
+      "lastname": "test",
+      "phonenumber": 1234567891,
+      "email": "jain@gmail.com",
+      "message": "wdwewetest",
+      "id": 3
+    },
+    {
+      "firstname": "abctst",
+      "lastname": "qwerty",
+      "phonenumber": 1232134545,
+      "email": "jain@gmail.com",
+      "message": "testqwerty",
+      "id": 4
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 5
+    },
+    {
+      "firstname": "abcd",
+      "lastname": "testabcd",
+      "phonenumber": 1212121212,
+      "email": "jain@gmail.com",
+      "message": "testabcd",
+      "id": 6
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 7
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 8
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 9
+    },
+    {
+      "firstname": "deepa",
+      "lastname": "mm",
+      "phonenumber": 212112211,
+      "email": "jain@gmail.com",
+      "message": "ajsj",
+      "id": 10
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 11
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 12
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 13
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 14
+    },
+    {
+      "firstname": "testname",
+      "lastname": "test",
+      "phonenumber": 9988776655,
+      "email": "test@test.com",
+      "message": "test message",
+      "id": 15
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<div class="container">
+    <form  #myForm="ngForm"  (ngSubmit)="checkappointment(myForm.value);myForm.reset()" ngNativeValidate>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" pattern="[A-Za-z]*" class="form-control" id="fname" name="fname" placeholder="Enter first name" required="required" autocomplete="off" [(ngModel)]="currentUser.fname">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" pattern="[A-Za-z]*" class="form-control" id="lname" name="lname" placeholder="Enter last name" required="required" autocomplete="off" [(ngModel)]="currentUser.lname">
+          </div>
+          <div class="form-group">
+            <label for="age">Age <small>(Must be between 18 and 60)</small>
+            </label>
+            <input type="text" pattern="1[8|9]|[2-5][0-9]|60" class="form-control" id="age" name="age" placeholder="Enter age" required="required" title="Age must be between 18 and 60" autocomplete="off" [(ngModel)]="currentUser.age">
+          </div>
+          <div class="form-group">
+            <label for="phone">Contact No.
+            </label>
+            <input type="text"  class="form-control" id="phone" name="phone" placeholder="Enter here" title="Must be of 10 digits" autocomplete="off"  [(ngModel)]="currentUser.phone">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required="required" [(ngModel)]="currentUser.email">
+          </div>
+          <div class="form-group">
+            <label for="trainer">Trainer Preference</label>
+            <input type="text" class="form-control" id="trainer" name="trainer" placeholder="Enter preferred trainer name"  [(ngModel)]="currentUser.trainer">
+          </div>
+          <div class="form-group">
+            <label for="physio">Physiotherapist</label>
+            <input type="checkbox" class="ml-5 mt-2" style="width:20px;height:20px" id="physio" name="physio"  [(ngModel)]="currentUser.physio">
+          </div>
+          <fieldset>  
+          <legend>Address:</legend>
+          <table>
+            <tr>
+              <td><label for="street">Street:</label></td>
+              <td><input type="text" id="street" name="street"  autocomplete="off"  [(ngModel)]="currentUser.street"></td></tr>
+            <tr>
+            <tr>
+              <td><label for="city">City:</label></td>
+              <td><input type="text" id="city" name="city" required="required" autocomplete="off" [(ngModel)]="currentUser.city"></td></tr>
+            <tr>
+              <td><label for="state">State:</label></td>
+              <td><input type="text" id="state" name="state" required="required" [(ngModel)]="currentUser.state"></td></tr>
+            <tr>
+            <td style="padding-right:20px;"><label for="pincode">Pincode:</label></td>
+            <td><input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required="required" title="Pincode must of 6 digits" [(ngModel)]="currentUser.pincode"></td></tr>
+            <tr>
+              <td style="padding-right:20px;"><label for="country">Country:</label></td>
+              <td><input type="text" id="country" name="country"  [(ngModel)]="currentUser.country"></td>
+            </tr>
+        </table>
+         </fieldset>
+         <br>
+          <div class="form-group">
+            <label for="date">Date of Appointment</label>
+            <input type="date" class="form-control" id="date" name="date" placeholder="Choose date" required="required" [(ngModel)]="currentUser.date">
+          </div> 
+        
+          <div class="form-group">
+            <label for="package">Package:  </label>
+            <select name='packages' required="required" [(ngModel)]="currentUser.packages">
+              <option readonly value="">Choose One</option>
+              <option value="1000">Basic Rs-1000</option>
+              <option value="2000">Elite Rs-2000</option>
+              <option value="5000">Premium Rs-5000</option>
+            </select>
+          </div> 
+          
+          <button type="submit"  class="btn btn-lg btn-success" *ngIf="!isEdit">Submit</button>
+          <button type="submit"  class="btn btn-lg btn-primary" *ngIf="isEdit">Update</button>
+          <strong><span *ngIf="submitted" class="text-info ml-2">Form Submitted!</span></strong>
+        <strong><span *ngIf="updated" class="text-info ml-2">Form Updated!</span></strong>
+
+
+    </form>
+  </div>

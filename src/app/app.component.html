@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Fitness Tracker
+  </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .apply{
+      width:100%;
+      height: 100%
+    }
+    .sidelink{
+      font-size: 20px;
+      border-bottom: solid;
+      border-radius: 10px;
+      color:black;
+    }
+    .sidelink:hover{
+      background-color: gold; 
+      font-size: 25px;
+    }
+    .fitnessImage{
+      height: 500px;
+    }
+    .active{
+      background-color: green;
+      color:white;
+      border-radius: 10px;
+    }
+    .active.sidelink:hover{
+      background-color:green;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black !important">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/fitness.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    Fitness Tracker
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/landing-page" routerLinkActive="active">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/place-fitness-trainer-appointment" routerLinkActive="active">Place Appointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/view-appointment" routerLinkActive="active" >View Appointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact-us" routerLinkActive="active">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="container-fluid m-0">
+
+  <div class="row">
+
+  <nav class="col-lg-2 col-md-3 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link sidelink m-3"  routerLink="/landing-page" routerLinkActive="active">
+                Home 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sidelink m-3" routerLink="/place-fitness-trainer-appointment" routerLinkActive="active">
+                  Place Appointment
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  sidelink m-3" routerLink="/view-appointment" routerLinkActive="active" >
+                  View Appointment
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  sidelink m-3" routerLink="/contact-us" routerLinkActive="active" >
+                  Contact Us
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+
+  <div class="col-lg-10 col-md-9">
+    <div class="row">
+      <router-outlet></router-outlet>
+    </div>
+    <br>
+    <div class="row">
+      <button class="btn btn-lg btn-primary m-auto apply" routerLink="place-fitness-trainer-appointment" routerLinkActive="active" >Apply For Trainer</button>
+    </div>
+    </div>
+  </div>
+  <br>
+</div>
+</body>
+</html>
